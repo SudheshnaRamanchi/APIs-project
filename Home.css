@@ -1,0 +1,212 @@
+/* Home.css */
+
+/* Container for image and content */
+.container {
+  display: flex;
+  justify-content: space-between; /* Place items on either side */
+  align-items: center; /* Vertically center the items */
+  background: linear-gradient(to bottom right, #FFC0CB, #FF69B4);
+  margin-top: 5px;
+  padding: 10px; /* Add padding for better spacing */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+  border: 1px solid #FF6F61;
+  gap: 20px; /* Space between elements */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* First content section */
+.one {
+  background: linear-gradient(to bottom right, #e7bad0, #FFC0CB, #FFB6C1);
+  padding: 0px;
+  border-radius: 0px;
+  width: 100%;
+  color: #2a0505;
+  display: flex;
+  justify-content: flex-end;
+}
+.text{
+  transform: scale(0.8);
+
+}
+/* Text content */
+.tow {
+  flex: 1; /* Allow the text content to take up remaining space */
+  opacity: 0; /* Hidden before animation */
+  animation: fadeInText 1s ease-out 0.5s forwards;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.tow h6 {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+
+.tow h1 {
+  font-size: 2.90rem;
+  text-align: left;
+  font-family: 'cursive' ; /* Change font family */
+  font-weight:bolder; /* Makes the text bold */
+  color:  #7e0158;
+ 
+  text-transform: uppercase; /* Converts text to uppercase */
+  letter-spacing: 1.0px; /* Adds spacing between letters */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle text shadow */
+  line-height: 1.0; /* Increases the space between lines */
+  margin-bottom: 10px; /* Adds space below the heading */
+}
+.tow p{
+  font-size: 1.8rem;
+  text-align: left;
+   font-family: 'cursive'
+}
+
+
+/* Image container */
+.home-img {
+  flex: 0 0 200px; /* Fixed width for the image section */
+  text-align: right;
+  opacity: 1; /* Initially visible */
+  transform: scale(0.8); /* Start with a smaller scale */
+  animation: fadeInImage 1.5s ease-out 0.5s forwards; /* Image animation */
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  
+ 
+}
+
+
+/* Image styling */
+.home-img img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: inset 0 4px 8px rgba(255, 2, 40, 0.5), 0 2px 4px rgba(255, 105, 97, 0.3); /* Shadow for depth */
+ transform: translateY(-50px); /* Start at normal position */
+animation: moveUpDown 5s ease-in-out infinite;
+animation: fadeInImage 1.5s ease-out 0.5s forwards; 
+transition: transform 0.3s ease;
+background-color: yellow;
+}
+.home-img img:hover{
+  transform: translateY(-4px);
+
+}
+.footer {
+  background-color: #bd0385;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.footer-content a {
+  color: #cd0808;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* Animation for text fading in */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); /* Slide from left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation for image fading in and scaling up */
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens larger than 1200px (desktops) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 20px;
+    gap: 40px; /* Larger gap between items on larger screens */
+  }
+
+  .tow h6 {
+    font-size: 1.5rem; /* Larger text on large screens */
+  }
+}
+
+/* For tablets (screens between 768px and 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    padding: 15px;
+    gap: 20px; /* Moderate gap on medium screens */
+  }
+
+  .img {
+    flex: 0 0 150px; /* Slightly smaller image */
+  }
+
+  .tow h6 {
+    font-size: 1.3rem;
+  }
+}
+
+/* For mobile screens (below 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center align all content */
+    padding: 10px;
+  }
+
+  .img {
+    flex: 0 0 auto;
+    margin-right: 0; /* Remove margin when stacking */
+    margin-bottom: 20px; /* Add space below the image */
+    width: 100%;
+  }
+
+  .img img {
+    max-width: 150px; /* Smaller image for mobile */
+  }
+
+  .tow {
+    margin-left: 0; /* Remove margin for mobile */
+  }
+
+  .tow h6 {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+}
+.color{
+  color: #ff0000;
+}
+
+
+
+
+  
+  
+  
+  

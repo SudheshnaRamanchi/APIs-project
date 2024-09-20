@@ -1,0 +1,29 @@
+/* MyNavbar.css */
+
+/* Set the background color of the navbar */
+.custom-navbar {
+/*  background-color: #FFC0CB; */
+background: linear-gradient(to bottom right, #FFB6C1, #FF69B4, #FF1493, #C71585);
+}
+
+/* Style the navbar brand logo */
+.custom-navbar .navbar-brand img {
+  border-radius: 50%; /* Optional: make the logo circular */
+}
+
+/* Style the search bar */
+#searchBar {
+  border: 1px solid #ced4da; /* Optional: customize the border color */
+  border-radius: 4px;
+}
+
+/* Optional: Style the navbar links */
+.custom-navbar .nav-link {
+  color: #ffffff; /* Change link color */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffffff; /* Change link hover color */
+}
+
+

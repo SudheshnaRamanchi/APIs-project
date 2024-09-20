@@ -1,0 +1,154 @@
+/* Custom background for the search bar */
+.bg-custom1 {
+  background-color: #f8f9fa; /* Light background for search bar */
+}
+
+/* Search bar styling */
+#searchBar {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #007bff;
+  width: 100%;
+  max-width: 1150px; /* Limit the width on larger screens */
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow to the cards */
+  transition: transform 0.3s ease-in-out; /* Smooth hover animation */
+  color: #000000;
+  background: #FFB6C1;
+  height: 400px;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Image inside the card */
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Card body content */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Button styling */
+.btn-outline-danger {
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary a:hover {
+  color: #ffcc00; /* Hover color for button links */
+}
+
+/* Flex container for image section */
+.hello {
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Image in hello section */
+.hello img {
+  height: 400px;
+  width: 100%;
+  max-width: 1400px; /* Limit the max-width to maintain responsiveness */
+  border-radius: 0px;
+}
+#select{
+ color: #f8f9fa;
+ 
+}
+
+/* Responsive design for smaller devices */
+
+/* Tablets (screens between 768px and 1200px) */
+@media (max-width: 1200px) {
+  /* Reduce the height of the image on tablets */
+  .hello img {
+    height: 400px;
+  }
+
+  .card-img-top {
+    height: 250px; /* Reduce image height inside cards */
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Adjust font size of card titles */
+  }
+
+  #searchBar {
+    max-width: 100%; /* Full width search bar on smaller screens */
+  }
+}
+
+/* Mobile devices (below 768px) */
+@media (max-width: 768px) {
+  /* Stack items vertically on mobile */
+  .hello {
+    flex-direction: column;
+  }
+
+  /* Adjust the image size for mobile */
+  .hello img {
+    height: auto; /* Let the image scale naturally */
+    width: 100%; /* Full width */
+  }
+
+  .card-img-top {
+    height: 200px; /* Smaller image height inside cards */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Smaller title font size for mobile */
+  }
+
+  .btn-outline-danger {
+    font-size: 0.9rem; /* Smaller buttons on mobile */
+  }
+}
+
+/* Extra small devices (below 576px) */
+@media (max-width: 576px) {
+  /* Further reduce image size for very small screens */
+  .hello img {
+    height: auto;
+    width: 100%;
+  }
+
+  .card-img-top {
+    height: 500px; /* Smaller image height inside cards */
+  }
+
+  .card-title {
+    font-size: 0.9rem; /* Even smaller title font size for extra small screens */
+  }
+
+  .btn-outline-danger {
+    font-size: 0.85rem; /* Smaller buttons */
+  }
+}
+

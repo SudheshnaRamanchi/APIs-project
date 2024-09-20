@@ -1,0 +1,154 @@
+/* .image-container img{
+width: 500px;
+height: 500px;
+object-fit: cover;
+opacity: 0;
+animation: slideInFromBottom 2s ease-in-out forwards;
+position: absolute;
+} */
+
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 5px 0 0 0; /* Adjust padding as needed */
+  }
+  
+  .image-container {
+    position: relative; /* Allows positioning of child elements relative to this container */
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden; /* Ensures no overflow beyond the container */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+  }
+  
+  .image {
+    position: absolute; /* Positions images relative to the parent container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    opacity: 0; /* Start with images hidden */
+    animation: fadeIn 5s ease-in-out forwards; 
+     /* Pink shadow effect */
+  }
+
+  /* Container for social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Styling for each social media link */
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for the icons */
+.social-icons a:hover {
+  transform: scale(1.1);  /* Slight zoom-in effect */
+}
+
+/* Styling for images */
+ /*.social-icons img {
+border-radius: 100%; Makes the images circular */
+.social-icons img{     /* Adjust image size */
+  height: 80px;
+  object-fit: cover; /* Ensures images are properly cropped */
+}
+/* Container styling for the row */
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* Styling for each column */
+.col-4 {
+  flex: 0 0 30%; /* Ensures each column takes 30% of the width */
+  margin-bottom: 20px;
+}
+
+/* Background color for the cards */
+.bg-light {
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 3px 4px 10px rgba(231, 94, 178, 0.783); /* Adds subtle shadow */
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Smooth scaling effect on hover for the entire card */
+.bg-light:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Styling for images inside Card.Link */
+.card-link img {
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 8px; /* Optional: Add slight rounding to images */
+}
+
+/* On hover, move the image up slightly */
+.card-link img:hover {
+  transform: translateY(-10px); /* Moves the image 10px upwards */
+}
+
+/* General card title styling */
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* General card text styling */
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Link styling */
+.card-link {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap default link color */
+  transition: color 0.2s ease;
+}
+
+/* Change link color on hover */
+.card-link:hover {
+  color: #0056b3;
+}
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start hidden */
+      transform: translateY(10px); /* Slightly move down */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+  /* Delay for the second image to appear after the first one */
+  .image:nth-of-type(2) {
+    animation-delay: 3s; /* Adjust the delay time to match the duration of the first image's animation */
+  }
+  
+  
+  
+  
+  

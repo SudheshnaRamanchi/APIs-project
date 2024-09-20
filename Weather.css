@@ -1,0 +1,108 @@
+.weather-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f03030;
+  text-align: center;
+  background: linear-gradient(145deg, #ffc44d, #c77d00); /* Adjusted gradient */
+}
+
+/* Weather Header */
+.weather-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Weather Temperature */
+.weather-temperature {
+  font-size: 2em;
+  margin: 1px 0;
+  color: #333;
+}
+
+/* Weather Icon */
+.weather-icon {
+  width: 64px;
+  height: 64px;
+}
+
+/* Weather Condition */
+.weather-condition {
+  font-size: 1.2em;
+  margin: 1px 0;
+  color: #666;
+}
+
+/* Weather Details */
+.weather-details {
+  font-size: 1em;
+  color: #c26969;
+}
+
+.weather-details p {
+  margin: 5px 0;
+}
+
+.hello {
+ 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+/* Image Styling */
+.hello img {
+  height: auto;   
+  border-radius: 0px;
+  padding-left: 20px; 
+}
+
+
+
+@media (min-width: 768px) {
+  .weather-container {
+    max-width: 700px;
+  }
+
+  .weather-header {
+    font-size: 2em;
+  }
+
+  .weather-temperature {
+    font-size: 2.5em;
+  }
+
+  .hello {
+    height: 400px;
+    width: 600px;
+    padding-left: 10px;
+  }
+}
+
+/* For small screens (mobile phones, up to 767px) */
+@media (max-width: 767px) {
+  .weather-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .weather-header {
+    font-size: 1.2em;
+  }
+
+  .weather-temperature {
+    font-size: 1.5em;
+  }
+
+  .hello {
+    height: auto;
+    width: 50%;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+}
